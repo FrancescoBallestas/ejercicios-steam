@@ -1,0 +1,63 @@
+.container{
+    position: relative;
+    height: 700px;
+    width: 100%;
+    color: #fff;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      font-family: 'Tomorrow', sans-serif;
+      scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+  
+  }
+  
+  .caja1, .caja2, .caja3{
+    height: 200px;
+    width: 200px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    position: absolute;
+    left: 650px;
+    top: 60px;
+  
+   }
+  
+  .caja1{
+    color: #000;
+    background-color: #000;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.8);
+  }
+  
+  .caja2{
+    color: blue;
+    background-color: blue;
+    box-shadow: 5px 5px 10px 5px rgba(255, 0, 0, 0.3);
+  }
+  
+  .caja3{
+    color: #A74122;
+    background-color: #A74122;
+    box-shadow: 5px 5px 10px 5px rgba(0, 255, 0, 0.8);
+  }
+  
+   .container:hover .caja1{
+     -webkit-transform: scale(0.9) rotate(230deg) skew(10deg);
+     transform: scale(0.9) rotate(230deg) skew(10deg);
+  }
+     
+  .container:hover .caja2{
+      -webkit-transform: scale(0.8) rotate(-230deg) skew(-10deg);
+      transform: scale(0.8) rotate(-140deg) skew(-10deg) ;
+  }
+  
+  .container:hover .caja3{
+      -webkit-transform: scale(0.7) rotate(120deg) skew(30deg);
+      transform: scale(0.7) rotate(-140deg) skew(-10deg);
+  }
